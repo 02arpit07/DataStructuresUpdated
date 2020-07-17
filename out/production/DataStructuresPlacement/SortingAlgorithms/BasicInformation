@@ -1,0 +1,45 @@
+
+
+Algorithm	                           Time Complexity
+                        Best	          Average	               Worst
+Selection Sort	       Ω(n^2)	              θ(n^2)	        O(n^2)
+Bubble Sort            	Ω(n)	             θ(n^2)         	O(n^2)
+Insertion Sort	         Ω(n)            	θ(n^2)	             O(n^2)
+Heap Sort	             Ω(n log(n))	  θ(n log(n))        	O(n log(n))
+Quick Sort	             Ω(n log(n))	  θ(n log(n))         	O(n^2)
+Merge Sort             	Ω(n log(n))      	θ(n log(n))     	O(n log(n))
+Bucket Sort          	Ω(n+k)	             θ(n+k)          	O(n^2)
+Radix Sort	            Ω(nk)	              θ(nk)           	O(nk)
+
+----------------------------------------------------------------------------------------------
+TimSort
+TimSort is a sorting algorithm based on Insertion Sort and Merge Sort.
+
+A stable sorting algorithm works in O(n Log n) time
+Used in Java’s Arrays.sort() as well as Python’s sorted() and sort().
+First sort small pieces using Insertion Sort, then merges the pieces using merge of merge sort.
+-----------------------------------------------------------------------------------------------
+Counting Sort
+Counting sort has better time complexity but worse space complexity. ... It should be noted that
+ while counting sort is computationally superior it only applies to sorting small integer values.
+-------------------------------------------------------------------------------------------------
+Selection Sort
+It is combination of seaarching and sorting.
+it checks smallest element in array.
+it replaces smallest element with element at 0 index position
+now again checks and replaces it with 1 index pos.
+-------------------------------------------------------------------------------------------
+Insertion sort
+for(int i=1;i<leng;i++)
+        {
+            temp=arr[i];//temp=element at 1 pos
+            j=i;//j=1
+            while(j>0 && arr[j-1]>temp)//while(1>0 &&arr[0]>arr[1]
+            {
+                arr[j]=arr[j-1];//arr[1]=arr[0]
+                j--;// now j=0
+            }
+            arr[j]=temp;//arr[0]=arr[1]
+        }
+        //similar to cards(Picking and inserting it)
+        //full explanation in above code comments
